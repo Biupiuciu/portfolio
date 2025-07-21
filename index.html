@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boning Chen Portfolio</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="projectCardContainer" id="overlay" onclick="closeCard()"></div>
+    <div class="projectCard" id="card">
+      <div class="close">
+        <img src="/asset/close.png" alt="" onclick="closeCard()" />
+      </div>
+      <div class="content">
+        <div class="scroll">
+          <div class="cardTitle">
+            <div class="font-purple font-large font-bold projectTitle">
+              Chatime
+            </div>
+            <a href="" id="link">Showcase</a>
+          </div>
+
+          <p>
+            A full-stack project was designed to to make it effortless for users
+            to engage in live conversations, fostering seamless communication
+            and connection.
+          </p>
+          <div class="techstack">
+            <div>React</div>
+            <div>Vite</div>
+            <div>Tailwind CSS</div>
+            <div>Node.js</div>
+            <div>MongoDB</div>
+            <div>Express</div>
+          </div>
+          <img src="./asset/p1.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <nav id="navbar" class="horizontalBigPadding font-bold">
+      <div id="navi-smallscreen">
+        <img src="./asset/menu.png" alt="" onclick="openMenu()" />
+      </div>
+
+      <span>BONING</span>
+
+      <ul class="" id="navi-bigscreen">
+        <li onclick="scrollToELE()">HOME</li>
+        <li onclick="scrollToELE('about')">ABOUT</li>
+        <li onclick="scrollToELE('project')">PROJECTS</li>
+        <li onclick="scrollToELE('contact')">CONTACTS</li>
+      </ul>
+      <button>
+        <a
+          href="https://drive.google.com/file/d/1W1urniMaEdvOFtwve7JtjGQkzX8GafG9/view?usp=sharing"
+          target="_blank"
+          >RESUME</a
+        >
+      </button>
+    </nav>
+
+    <div>
+      <ul class="" id="navi-smallscreen-menu">
+        <li onclick="scrollToELE()">HOME</li>
+        <li onclick="scrollToELE('about')">ABOUT</li>
+        <li onclick="scrollToELE('project')">PROJECTS</li>
+        <li onclick="scrollToELE('contact')">CONTACTS</li>
+      </ul>
+    </div>
+
+    <div class="horizontalBigPadding">
+      <div class="font-xlarge font-bold">
+        HI, I'M
+        <span class="photo">
+          <img src="./asset/photo.jpg" alt="" />
+          <span class="greenpoint"></span>
+          <div class="greenpointblink greenpoint"></div
+        ></span>
+        BONING CHEN
+      </div>
+      <div class="font-xlarge text-left font-bold">FULL-STACK DEVELOPER</div>
+    </div>
+
+    <div class="flex vertical-center horizontal-center arrowcontainer">
+      <img src="./asset/Group 1.png" alt="" />
+    </div>
+
+    <div
+      id="about"
+      class="flex-vertical vertical-center font-bold horizontalBigPadding"
+    >
+      <div class="font-purple">Know Me More</div>
+      <div class="font-large">ABOUT ME</div>
+      <img src="./asset/Line 1.png" alt="" class="verticalline" />
+    </div>
+    <div class="grid-horizontal-2 horizontalBigPadding">
+      <div class="font-large">
+        <p id="introduction"></p>
+      </div>
+      <div>
+        <p>
+          I specialize in building high-performing web applications using
+          <span class="font-purple font-bold"
+            >React, Next.js, TypeScript, and Node.js</span
+          >. My goal is not only to make things work but to make them work
+          beautifully and efficiently.
+        </p>
+        <p>
+          With strong frontend skills and a solid grasp of system design,
+          performance optimization, and accessibility, I deliver clean, modular,
+          and user-friendly products. My UI/UX experience ensures that the
+          applications feel intuitive and polished. Whether working solo or in a
+          team, I focus on creating fast, reliable, and enjoyable user
+          experiences.
+        </p>
+        <p>
+          Outside of development, I find inspiration visiting exhibitions and
+          maintain focus through bouldering — activities that nurture creativity
+          and discipline.
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex-vertical vertical-center font-bold horizontalBigPadding marginTopBig"
+    >
+      <div class="font-purple">My Journey</div>
+      <div class="font-large text-center">QUALIFICATIONS & EXPERIENCE</div>
+      <img src="./asset/Line 1.png" alt="" class="verticalline" />
+    </div>
+    <div class="flex-vertical horizontal-center vertical-center">
+      <div class="horizontalHalf">
+        <p class="font-large">Software Engineer</p>
+        <div class="space-between horizontal-center">
+          <span>Partners in Planning, Melbourne</span>
+          <span>11.2024 - present</span>
+        </div>
+        <ul class="experienceDescription">
+          <li>
+            - Collaboratively developed a web application for financial advisors
+            to generate customized Statements of Advice (SoAs), using
+            <span class="font-bold"
+              >SvelteKit, TypeScript, SQLite, and RESTful APIs</span
+            >, reducing document preparation time by over 15%, improving advisor
+            productivity
+          </li>
+          <li>
+            - Integrated
+            <span class="font-bold">Monday.com API</span> via
+            <span class="font-bold">GraphQL</span> to fetch client data,
+            automatically pre-filling SoA input forms and reducing time and
+            manual entry errors
+          </li>
+          <li>
+            - Designed and implemented a lightweight backend using Turso and
+            SQLite with user and SoA database tables
+          </li>
+          <li>
+            - Developed authentication system and comprehensive SoA historical
+            record management features including querying, display, and update
+            functionality
+          </li>
+
+          <li>
+            - Built a responsive web page to showcase company services with
+            <span class="font-bold">Next.js</span>, deployed on
+            <span class="font-bold">Cloudflare Pages</span>; integrated
+            <span class="font-bold">Cloudflare Functions</span> for edge-side
+            serverless logic and Turnstile for
+            <span class="font-bold">CAPTCHA-free</span> bot mitigation
+          </li>
+          <li>
+            - Designed low-code automation pipelines using Zapier and Microsoft
+            Power Automate, streamlining operations across Gmail, Excel, Word,
+            and custom business tools
+          </li>
+        </ul>
+
+        <p class="font-large">Master of Information Technology</p>
+        <div class="space-between horizontal-center">
+          <span>University of Melboune, Melbourne</span>
+          <span>2022 - 2023</span>
+        </div>
+        <ul class="experienceDescription">
+          <li></li>
+        </ul>
+
+        <p class="font-large">Bachelor of Computer Science</p>
+        <div class="space-between horizontal-center">
+          <span>Hohai University, China</span>
+          <span>2017 - 2021</span>
+        </div>
+        <ul class="experienceDescription">
+          <li></li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="flex-vertical vertical-center horizontalBigPadding marginTopBig"
+    >
+      <div class="font-purple font-bold">Expertise</div>
+      <div class="font-large font-bold">SKILLS</div>
+      <img src="./asset/Line 1.png" alt="" class="verticalline" />
+      <div class="skillsContainer">
+        <div class="skillContainer">
+          <div><img src="./asset/1.png" alt="" /></div>
+          <span>REACT</span>
+        </div>
+        <div class="skillContainer">
+          <div><img src="./asset/2.png" alt="" /></div>
+          <span>TYPESCRIPT</span>
+        </div>
+        <div class="skillContainer">
+          <div><img src="./asset/3.png" alt="" /></div>
+          <span>NODEJS</span>
+        </div>
+        <div class="skillContainer">
+          <div><img src="./asset/4.png" alt="" /></div>
+          <span>NEXTJS</span>
+        </div>
+        <div class="skillContainer">
+          <div><img src="./asset/5.png" alt="" /></div>
+          <span>TAILWIND</span>
+        </div>
+        <div class="skillContainer">
+          <div><img src="./asset/6.png" alt="" /></div>
+          <span>GIT</span>
+        </div>
+        <div class="skillContainer">
+          <div><img src="./asset/7.png" alt="" /></div>
+          <span>AWS</span>
+        </div>
+        <div class="skillContainer">
+          <div><img src="./asset/8.png" alt="" /></div>
+          <span>MYSQL</span>
+        </div>
+        <div class="skillContainer">
+          <div><img src="./asset/9.png" alt="" /></div>
+          <span>MONGODB</span>
+        </div>
+        <div class="skillContainer">
+          <div><img src="./asset/10.png" alt="" /></div>
+          <span>SVELTEKIT</span>
+        </div>
+      </div>
+    </div>
+    <div
+      id="project"
+      class="flex-vertical vertical-center font-bold horizontalBigPadding marginTopBig"
+    >
+      <div class="font-purple">My Work</div>
+      <div class="font-large">PROJECTS</div>
+      <img src="./asset/Line 1.png" alt="" class="verticalline" />
+      <div class="projectsContainer">
+        <div class="projectContainer" onclick="openCard(0)">
+          <img src="./asset/chatime.jpg" alt="" />
+
+          <div>
+            <p>Detailed Project</p>
+            <p>Chatime</p>
+          </div>
+        </div>
+        <div class="projectContainer" onclick="openCard(1)">
+          <img src="./asset/getitdone.jpg" alt="" />
+          <div>
+            <p>Detailed Project</p>
+            <p>Get It Done</p>
+          </div>
+        </div>
+        <div class="projectContainer" onclick="openCard(2)">
+          <img src="./asset/settlewise.jpg" alt="" />
+          <div>
+            <p>Detailed Project</p>
+            <p>Settlewise Lending</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="contact"
+      class="flex-vertical vertical-center font-bold horizontalBigPadding marginTopBig"
+    >
+      <div class="font-purple">Get in Touch</div>
+      <div class="font-large">CONTACTS</div>
+      <img src="./asset/Line 1.png" alt="" class="verticalline" />
+      <span class="photo">
+        <img src="./asset/photo.jpg" alt="" />
+        <span class="greenpoint"></span>
+        <div class="greenpointblink greenpoint"></div
+      ></span>
+      <div class="contact">
+        <a
+          href="https://www.linkedin.com/in/boning-chen-111009283/"
+          target="_blank"
+          >Linkedln</a
+        >
+        <a href="https://github.com/Biupiuciu?tab=repositories" target="_blank"
+          >GitHub</a
+        >
+        <a href="mailto:burning9967@outlook.com">Email</a>
+      </div>
+      <div>© 2025 Boning</div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
