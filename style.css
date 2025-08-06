@@ -51,7 +51,7 @@ nav{
 }
 .stickInit{
     opacity: 0;
-    transForm:transFormY(-100%);
+    transform:transFormY(-100%);
 }
 .stickTop{
     position: fixed;
@@ -60,7 +60,7 @@ nav{
     z-index: 100;
     border-bottom: #707070 1px solid;
     opacity: 1;
-    transForm:transFormY(0);
+    transform:transFormY(0);
     background: #f1f1f1;
 }
 
@@ -179,7 +179,7 @@ button:hover{
     
 }
 
-.greenpointblink{
+.greenpoint-blink{
     animation: blink 1s infinite;  
     background-color: rgba(101, 255, 160, 0.491); 
 }

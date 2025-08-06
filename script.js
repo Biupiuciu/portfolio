@@ -76,7 +76,7 @@ function openCard(name){
    
     openProject=name;
     project=projects[openProject];
-    console.log(project);
+    
 
     document.querySelector(".projectTitle").innerHTML=project.name;
     document.getElementById("link").href=project.link;
@@ -108,7 +108,7 @@ function preventScroll(e) {
     const contentELE = document.querySelector('.content');
     
     if (contentELE&&contentELE.contains(e.target)){
-        // console.log("11");
+      
 
         if(contentELE.scrollHeight>contentELE.clientHeight){
             return
@@ -122,7 +122,7 @@ function preventScroll(e) {
 
 
 function openMenu(e){
-    console.log("1");
+   
     event.stopPropagation();
     document.getElementById("navi-smallscreen-menu").classList.toggle('show');
     document.addEventListener('click',closeMenu);
